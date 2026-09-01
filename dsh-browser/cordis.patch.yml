@@ -1,0 +1,18 @@
+# dsh-browser bundle patch: adds the built-in browser (host service, agent
+# tools, HTTP API, and the visible in-GUI panel) to the composed tree.
+#
+# Optional tuning — uncomment and adjust:
+#   config:
+#     headless: true            # run the browser without a desktop window
+#     channel: msedge           # force a channel: msedge | chrome | chromium
+#     executablePath: null      # absolute path override (wins over channel)
+#     viewportWidth: 1280
+#     viewportHeight: 800
+#     navTimeoutMs: 30000       # per-navigation budget
+#     snapshotMaxChars: 12000   # browser_snapshot text cap
+#     allowEval: false          # enable the gated browser_eval tool and /eval route
+#     launchArgs: []            # extra chromium launch args
+#     panelWidth: 460           # in-GUI panel width in px
+- insert:
+    - id: dsh-browser
+      name: 'dsh-browser'

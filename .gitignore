@@ -1,0 +1,13 @@
+# DSH plugin bundles — do not commit installed dependency trees.
+node_modules/
+
+# Scratch CSS extracted from the base package during theme research — not part of
+# any plugin. The plugins define their token palettes in lib/client.js.
+design-platform.css
+design-platform-dark.css
+design-platform-dark-alias.css
+
+# OS / editor noise.
+.DS_Store
+Thumbs.db
+*.log
