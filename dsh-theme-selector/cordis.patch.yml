@@ -1,0 +1,7 @@
+# dsh-theme-selector bundle patch: adds the theme selector client plugin to the
+# composed tree. The loader row mounts the package; client-modules serves its
+# browser half at /plugins/dsh-theme-selector/client.js and the shell loads it
+# as a client plugin (theme service + a Theme row in General settings).
+- insert:
+    - id: dsh-theme-selector
+      name: 'dsh-theme-selector'
